@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="ip" default="127.0.0.1" />
+  <node name="cage_ros_bridge" pkg="cage_ros_bridge" type="cage_ros_bridge" args="-d $(arg ip)" output="screen" required="true" />
+</launch>
